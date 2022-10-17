@@ -5,7 +5,7 @@
 /**
  * main - entry point
  * Description: print if a number is positive or negative
- * Returen: 0
+ * Return: 0
  */
 int main(void)
 {
