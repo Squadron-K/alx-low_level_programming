@@ -2,12 +2,12 @@
 /**
  * main - entry point
  * Description: write a - z in lower case
- * Return
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	char c
-		;
+	char c;
+
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
