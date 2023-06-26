@@ -49,7 +49,7 @@ Write a function that takes a pointer to an int as parameter and updates the val
     n=98
     julien@ubuntu:~/0x05$
 
- 1. Don't swap horses in crossing a stream
+1. Don't swap horses in crossing a stream
 Write a function that swaps the values of two integers.
 
 Prototype: void swap_int(int *a, int *b);
@@ -64,15 +64,15 @@ Prototype: void swap_int(int *a, int *b);
 	 */
 	int main(void)
 	{
-    		int a;
-    		int b;
+    	  int a;
+    	  int b;
 
-    		a = 98;
-    		b = 42;
-    		printf("a=%d, b=%d\n", a, b);
-    		swap_int(&a, &b);
-    		printf("a=%d, b=%d\n", a, b);
-    		return (0);
+    	  a = 98;
+    	  b = 42;
+    	  printf("a=%d, b=%d\n", a, b);
+    	  swap_int(&a, &b);
+    	  printf("a=%d, b=%d\n", a, b);
+    	  return (0);
 	}
 	julien@ubuntu:~/0x05$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-swap.c -o 1-swap
 	julien@ubuntu:~/0x05$ ./1-swap 
