@@ -18,23 +18,21 @@
 
 ### TASK:
 
-'0. 98 Battery st.
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
+0. 98 Battery st.
 
 Write a function that takes a pointer to an int as parameter and updates the value it points to to 98.
 
     Prototype: void reset_to_98(int *n);
 
-julien@ubuntu:~/0x05$ cat 0-main.c
-#include "main.h"
-#include <stdio.h>
+    julien@ubuntu:~/0x05$ cat 0-main.c
+    #include "main.h"
+    #include <stdio.h>
 
-/**
- * main - check the code 
- *
- * Return: Always 0.
- */
+    /**
+    * main - check the code 
+    *
+    * Return: Always 0.
+    */
 int main(void)
 {
     int n;
