@@ -1,29 +1,24 @@
 #include "main.h"
+#include <string.h>
 /**
+ * _strcat - An implementation that concancate
+ * @dest: string 1
+ * @src: string 2
  *
+ * Return: pointer to dest
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int j = 0, i = 0, len = 0;
-	char temp;
+	size_t len = 0;
+	size_t i;
 
-	while (src[len] <= '\0')
-	{
-		i++;
+	while (dest[len] != '\0')
 		len++;
-	}
-	while (dest[j] != '\0')
-	{
-		j++;
-		len++;
-	}
 
-	for (; i <= len; i++)
-	{
-		temp = src[i];
-		dest [j + 1] = temp;
-	}
+	for (i = 0; src[i] != '\0'; i++)
+		dest[len + i] = src[i];
+	dest[len + i] = '\0';
 
 	return (dest);
 }
