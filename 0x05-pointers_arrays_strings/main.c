@@ -1,19 +1,18 @@
+#include "main.h"
 #include <stdio.h>
 
-void print_array(int *, int);
-
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int array[1] = {
-		98
-	};
+    char s1[98];
+    char *ptr;
 
-	print_array(array, 0);
-	print_array(array, -1);
-	return (0);
+    ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
+    printf("%s", s1);
+    printf("%s", ptr);
+    return (0);
 }
