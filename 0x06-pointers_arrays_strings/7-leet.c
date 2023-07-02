@@ -1,6 +1,9 @@
 #include "main.h"
 /**
+ * leet - translate words into leet
+ * @s: string
  *
+ * Return: string
  */
 char *leet(char *s)
 {
@@ -10,7 +13,7 @@ char *leet(char *s)
 
 	while (s[i] != '\0')
 	{
-		for ( j = 0; j < 10; j++)
+		for (j = 0; j < 10; j++)
 		{
 			if (s[i] == a[j])
 				s[i] = b[j];
