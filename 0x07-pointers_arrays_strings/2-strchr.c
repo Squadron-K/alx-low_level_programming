@@ -9,12 +9,17 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0;
+	char *rtn;
 
 	for (; s[i] != '\0'; i++)
 		if (s[i] == c)
 		{
-			return (&s[i]);
+			rtn = &s[i];
+		}
+		else
+		{
+			rtn = "NULL";
 		}
 
-	return ("NULL");
+	return (rtn);
 }
