@@ -21,7 +21,7 @@ char *_strchr(char *s, char c)
 		}
 		else
 		{
-			rtn = "NULL";
+			rtn = NULL;
 		}
 	}
 
