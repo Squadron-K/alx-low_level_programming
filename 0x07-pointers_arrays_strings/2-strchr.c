@@ -12,6 +12,7 @@ char *_strchr(char *s, char c)
 	char *rtn;
 
 	for (; s[i] != '\0'; i++)
+	{
 		if (s[i] == c)
 		{
 			rtn = &s[i];
@@ -21,6 +22,7 @@ char *_strchr(char *s, char c)
 		{
 			rtn = "NULL";
 		}
+	}
 
 	return (rtn);
 }
