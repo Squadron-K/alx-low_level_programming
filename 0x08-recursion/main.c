@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code
@@ -7,6 +8,15 @@
  */
 int main(void)
 {
-    _print_rev_recursion("\nColton Walker");
+    int r;
+
+    r = factorial(1);
+    printf("%d\n", r);
+    r = factorial(5);
+    printf("%d\n", r);
+    r = factorial(10);
+    printf("%d\n", r);
+    r = factorial(0);
+    printf("%d\n", r);
     return (0);
 }
